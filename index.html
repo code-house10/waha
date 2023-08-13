@@ -1,5 +1,5 @@
 <!doctype html>
-<html dir="rtl">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
 <title>Untitled Page</title>
@@ -9,13 +9,13 @@
 <link href="css/swiper-bundle.min.css" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cairo:400,500,300&display=swap" rel="stylesheet">
-<link href="css/winch.css?v=1" rel="stylesheet">
-<link href="css/index.css?v=1" rel="stylesheet">
+<link href="css/winch.css?v=2" rel="stylesheet">
+<link href="css/index.css?v=2" rel="stylesheet">
 <script src="popper.min.js"></script>
 <script src="bootstrap.min.js"></script>
 <script src="swiper-bundle.min.js"></script>
 <script src="jquery-3.7.0.min.js"></script>
-<script src="wb.panel.min.js"></script>
+<script src="lottie-player.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
 {
@@ -58,7 +58,10 @@ document.addEventListener('DOMContentLoaded', function(event)
 <script>
 $(document).ready(function()
 {
-   $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'left', toggle: true});
+   $("#wb_ResponsiveMenu1 ul li a").click(function(event)
+   {
+      $("#wb_ResponsiveMenu1 input").prop("checked", false);
+   });
 });
 </script>
 </head>
@@ -67,27 +70,27 @@ $(document).ready(function()
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image6">
-<img src="images/winch1.png" id="Image6" alt="" width="117" height="88">
+<div id="wb_Lottie3">
+<lottie-player id="Lottie3" autoplay loop speed="1" mode="normal" src="https://lottie.host/295fa653-9b74-4976-8765-1a4eba6f4d0a/8QAH5fn9nY.json"></lottie-player>
 </div>
 </div>
 <div class="col-2">
-<nav id="wb_PanelMenu1">
-<a href="#PanelMenu1_markup" id="PanelMenu1">
-<span class="line"></span>
-<span class="line"></span>
-<span class="line"></span>
-</a>
-<div id="PanelMenu1_markup">
-<div id="PanelMenu1-logo"><img alt="" src="images/winch2.png"></div>
+<nav id="wb_ResponsiveMenu1">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title"><span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li role="menuitem"><a href="./index.html" class="nav-link">الرئيسية</a></li>
+<li role="menuitem"><a href="./index.html" class="nav-link">عن&nbsp;الشركة</a></li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-0" class="toggle">مقالات<b class="arrow-down"></b></label>
+<a href="./index.html" class="nav-link">مقالات<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
 <ul role="menu">
-<li role="menuitem"><a href="./index.html" class="nav-link PanelMenu1-effect">&#1575;&#1604;&#1585;&#1574;&#1610;&#1587;&#1610;&#1577;</a></li>
-<li role="menuitem"><a href="./index.html" class="nav-link PanelMenu1-effect">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578;</a></li>
-<li role="menuitem"><a href="./index.html" class="nav-link PanelMenu1-effect">&#1593;&#1606; &#1575;&#1604;&#1588;&#1585;&#1603;&#1577;</a></li>
-<li role="menuitem"><a href="./index.html" class="nav-link PanelMenu1-effect">&#1578;&#1608;&#1575;&#1589;&#1604; &#1605;&#1593;&#1606;&#1575;</a></li>
+<li role="menuitem"><a href="./article.html" class="nav-link">مقالة&nbsp;1</a></li>
 </ul>
-<div id="PanelMenu1-footer">شركة الواحة</div>
-</div>
+</li>
+<li role="menuitem"><a href="./index.html" class="nav-link">للتواصل</a></li>
+</ul>
 
 </nav>
 </div>
@@ -104,14 +107,14 @@ $(document).ready(function()
 <div class="carousel-item active">
 <div class="carousel-item-inner">
 <div id="wb_Image4">
-<img src="images/Yellow Luxury Car Showroom Facebook Cover (1).jpg" id="Image4" alt="" width="960" height="541">
+<img src="images/Black Modern Logistic and Transport Agency Facebook Cover.jpg" id="Image4" alt="" width="960" height="541">
 </div>
 </div>
 </div>
 <div class="carousel-item">
 <div class="carousel-item-inner">
 <div id="wb_Image5">
-<img src="images/Yellow Luxury Car Showroom Facebook Cover (1).jpg" id="Image5" alt="" width="960" height="541">
+<img src="images/نسخة من Black and Red Modern Logistics Service Presentation.jpg" id="Image5" alt="" width="960" height="540">
 </div>
 </div>
 </div>
@@ -134,7 +137,7 @@ $(document).ready(function()
 <img src="images/winch2.png" id="Image1" alt="" width="63" height="47">
 </div>
 <div id="wb_Text3">
-<span id="wb_uid0">متخصصون في ونش الإنقاذ السريع<br>: خدمة فورية لإنقاذك!<br></span>
+<span id="wb_uid0">تغطية شاملة</span>
 </div>
 </div>
 </div>
@@ -144,7 +147,7 @@ $(document).ready(function()
 <img src="images/winch3.png" id="Image2" alt="" width="63" height="47">
 </div>
 <div id="wb_Text2">
-<span id="wb_uid1">متخصصون في ونش الإنقاذ السريع<br>: خدمة فورية لإنقاذك!<br></span>
+<span id="wb_uid1">استجابة سريعة</span>
 </div>
 </div>
 </div>
@@ -154,7 +157,7 @@ $(document).ready(function()
 <img src="images/winch6.png" id="Image3" alt="" width="63" height="47">
 </div>
 <div id="wb_Text4">
-<span id="wb_uid2">متخصصون في ونش الإنقاذ السريع<br>: خدمة فورية لإنقاذك!<br></span>
+<span id="wb_uid2">أسعار مناسبة</span>
 </div>
 </div>
 </div>
@@ -165,21 +168,12 @@ $(document).ready(function()
 <div id="LayoutGrid3">
 <div class="row">
 <div class="col-1">
-<div id="wb_Section1" class="card">
-   <div id="Section1-card-body">
-      <div id="Section1-card-item0"><img src="images/about-1.jpg" width="500" height="450" alt="" title=""></div>
-      <div id="Section1-card-item1"><img src="images/about-2.jpg" width="500" height="450" alt="" title=""></div>
-   </div>
-</div>
-</div>
-<div class="col-2">
 <div id="wb_Section2" class="card">
    <div id="Section2-card-body">
-      <div id="Section2-card-item0">معلومات عنا<br></div>
-      <div id="Section2-card-item1">حول وكالة HighTech وحلول تكنولوجيا المعلومات المبتكرة<br></div>
-      <div id="Section2-card-item2">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.<br>إذا كنت تحتاج إلى عدد أكبر من الفقراتلن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصو.<br><br></div>
-      <div id="Section2-card-item3">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.<br><br><br></div>
-      <div id="Section2-card-item4"><a href="tel:01024888950">المزيد من التفاصيل</a></div>
+      <div id="Section2-card-item0">**ونش الواحة للانقاذ السريع للسيارات**</div>
+      <div id="Section2-card-item1">**ونش الواحة للانقاذ السريع للسيارات**<br><br>ونش الواحة للانقاذ السريع للسيارات هي شركة متخصصة في تقديم خدمات الإنقاذ السريع للسيارات في مصر. نحن نقدم خدماتنا على مدار 24 ساعة طوال أيام الأسبوع، ولدينا فريق من السائقين المدربين على أعلى مستوى من الكفاءة والمهارات.<br><br>نحن نقدم مجموعة متنوعة من خدمات الإنقاذ السريع للسيارات، بما في ذلك:<br><br>* سحب السيارات المعطلة<br>* نقل السيارات إلى ورشة الصيانة<br>* إصلاح أعطال السيارات على الطريق<br>* مساعدة السائقين في حالات الطوارئ<br><br>نحن نسعى دائمًا إلى تقديم أفضل خدمة ممكنة لعملائنا، ونحن ملتزمون بتوفير خدمات آمنة وفعالة وبأسعار معقولة.<br><br>إذا كنت تبحث عن شركة متخصصة في تقديم خدمات الإنقاذ السريع للسيارات في مصر، فلا تتردد في الاتصال بنا. سنكون سعداء بتقديم المساعدة لك في أي وقت.<br><br>**لماذا تختار ونش الواحة للانقاذ السريع للسيارات؟**<br><br>هناك العديد من الأسباب التي تجعلك تختار ونش الواحة للانقاذ السريع للسيارات، بما في ذلك:<br><br>* نحن نقدم خدماتنا على مدار 24 ساعة طوال أيام الأسبوع.<br>* لدينا فريق من السائقين المدربين على أعلى مستوى من الكفاءة والمهارات.<br>* نقدم مجموعة متنوعة من خدمات الإنقاذ السريع للسيارات.<br>* نسعى دائمًا إلى تقديم أفضل خدمة ممكنة لعملائنا.<br>* ملتزمون بتوفير خدمات آمنة وفعالة وبأسعار معقولة.<br><br>**اتصل بنا اليوم واحصل على أفضل خدمة إنقاذ سريع للسيارات في مصر!**</div>
+      <div id="Section2-card-item2"><a href="tel:01024888950">تواصل معنا الأن</a></div>
+      <div id="Section2-card-item3"><img src="images/Blue And White Modern Logistic And Transport Service Facebook Cover.jpg" loading="lazy" width="1640" height="924" alt="" title=""></div>
    </div>
 </div>
 </div>
@@ -213,10 +207,10 @@ $(document).ready(function()
 <path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
 </clipPath>
 </svg>
-      <div id="Section6-card-item1">Web Design<br></div>
-      <div id="Section6-card-item2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.<br><br></div>
-      <div id="Section6-card-item3"><a href="https://www.wysiwygwebbuilder.com">اعرف المزيد</a></div>
-      <div id="Section6-card-item4"><i class="fa fa-database"></i></div>
+      <div id="Section6-card-item1">تغطية شاملة</div>
+      <div id="Section6-card-item2">نحن نقدم خدماتنا على مدار الساعة وعلى مدار أيام الأسبوع، بما في ذلك العطلات. نهدف إلى تقديم الدعم في أي وقت وفي أي مكان</div>
+      <div id="Section6-card-item3"><a href="tel:01024888950">إتصل الأن</a></div>
+      <div id="Section6-card-item4"><img src="images/7aa4cae7-0cbf-4289-83cc-d89d3c252c5d.gif" width="150" height="144" alt="" title=""></div>
    </div>
 </div>
 </div>
@@ -231,10 +225,10 @@ $(document).ready(function()
 <path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
 </clipPath>
 </svg>
-      <div id="Section3-card-item1">Web Design<br></div>
-      <div id="Section3-card-item2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.<br><br></div>
-      <div id="Section3-card-item3"><a href="https://www.wysiwygwebbuilder.com">اعرف المزيد</a></div>
-      <div id="Section3-card-item4"><i class="fa fa-bars"></i></div>
+      <div id="Section3-card-item1">تقنية متقدمة<br></div>
+      <div id="Section3-card-item2">نحن نستخدم أحدث التقنيات في عمليات الإنقاذ والسحب. هذا يسمح لنا بضمان عمليات سريعة وآمنة دون تسبب أي ضرر للمركبة.</div>
+      <div id="Section3-card-item3"><a href="tel:01024888950">إتصل الان</a></div>
+      <div id="Section3-card-item4"><img src="images/Animation - 1691864792174.gif" width="150" height="150" alt="" title=""></div>
    </div>
 </div>
 </div>
@@ -249,70 +243,10 @@ $(document).ready(function()
 <path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
 </clipPath>
 </svg>
-      <div id="Section4-card-item1">Web Design<br></div>
-      <div id="Section4-card-item2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.<br><br></div>
-      <div id="Section4-card-item3"><a href="https://www.wysiwygwebbuilder.com">اعرف المزيد</a></div>
-      <div id="Section4-card-item4"><i class="fa fa-cubes"></i></div>
-   </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid6">
-<div id="LayoutGrid6">
-<div class="row">
-<div class="col-1">
-<div class="col-1-padding">
-<div id="wb_Section5" class="card">
-   <div id="Section5-card-body">
-      <div id="Section5-card-item0"><div id="Section5-card-item0-shape"></div></div>
-<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
-<clipPath id="Section5-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
-<path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
-</clipPath>
-</svg>
-      <div id="Section5-card-item1">Web Design<br></div>
-      <div id="Section5-card-item2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.<br><br></div>
-      <div id="Section5-card-item3"><a href="https://www.wysiwygwebbuilder.com">اعرف المزيد</a></div>
-      <div id="Section5-card-item4"><i class="fa fa-rocket"></i></div>
-   </div>
-</div>
-</div>
-</div>
-<div class="col-2">
-<div class="col-2-padding">
-<div id="wb_Section7" class="card">
-   <div id="Section7-card-body">
-      <div id="Section7-card-item0"><div id="Section7-card-item0-shape"></div></div>
-<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
-<clipPath id="Section7-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
-<path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
-</clipPath>
-</svg>
-      <div id="Section7-card-item1">Web Design<br></div>
-      <div id="Section7-card-item2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.<br><br></div>
-      <div id="Section7-card-item3"><a href="https://www.wysiwygwebbuilder.com">اعرف المزيد</a></div>
-      <div id="Section7-card-item4"><i class="fa fa-check-circle"></i></div>
-   </div>
-</div>
-</div>
-</div>
-<div class="col-3">
-<div class="col-3-padding">
-<div id="wb_Section8" class="card">
-   <div id="Section8-card-body">
-      <div id="Section8-card-item0"><div id="Section8-card-item0-shape"></div></div>
-<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
-<clipPath id="Section8-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
-<path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
-</clipPath>
-</svg>
-      <div id="Section8-card-item1">Web Design<br></div>
-      <div id="Section8-card-item2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.<br><br></div>
-      <div id="Section8-card-item3"><a href="https://www.wysiwygwebbuilder.com">اعرف المزيد</a></div>
-      <div id="Section8-card-item4"><i class="fa fa-window-restore"></i></div>
+      <div id="Section4-card-item1">استجابة سريعة<br></div>
+      <div id="Section4-card-item2"> تتميز شركة الواحة بسرعة استجابتها للمكالمات الطارئة. فبمجرد الاتصال بنا، سيتم إرسال ونش الإنقاذ على الفور لتقديم المساعدة</div>
+      <div id="Section4-card-item3"><a href="tel:01024888950">إتصل الان</a></div>
+      <div id="Section4-card-item4"><img src="images/cf31c124-77a2-47ba-a4c5-3076583741c9.gif" width="150" height="267" alt="" title=""></div>
    </div>
 </div>
 </div>
@@ -353,8 +287,26 @@ $(document).ready(function()
 <path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
 </clipPath>
 </svg>
-      <div id="Section9-card-item2"><img src="images/project-1.jpg" width="550" height="450" alt="" title=""></div>
+      <div id="Section9-card-item2"><img src="images/winch1.jpg" width="960" height="960" alt="" title=""></div>
       <div id="Section9-card-item3">ونش انقاذ اكتوبر</div>
+   </div>
+</div>
+<div id="wb_Section1" class="card">
+   <div id="Section1-card-body">
+      <div id="Section1-card-item0"><div id="Section1-card-item0-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section1-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
+</clipPath>
+</svg>
+      <div id="Section1-card-item1"><div id="Section1-card-item1-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section1-card-item1-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
+</clipPath>
+</svg>
+      <div id="Section1-card-item2"><img src="images/winch4.jpg" width="960" height="960" alt="" title=""></div>
+      <div id="Section1-card-item3">ونش انقاذ اكتوبر</div>
    </div>
 </div>
 </div>
@@ -375,8 +327,26 @@ $(document).ready(function()
 <path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
 </clipPath>
 </svg>
-      <div id="Section10-card-item2"><img src="images/project-1.jpg" width="550" height="450" alt="" title=""></div>
+      <div id="Section10-card-item2"><img src="images/winch2.jpg" width="960" height="960" alt="" title=""></div>
       <div id="Section10-card-item3">ونش انقاذ اكتوبر</div>
+   </div>
+</div>
+<div id="wb_Section5" class="card">
+   <div id="Section5-card-body">
+      <div id="Section5-card-item0"><div id="Section5-card-item0-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section5-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
+</clipPath>
+</svg>
+      <div id="Section5-card-item1"><div id="Section5-card-item1-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section5-card-item1-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
+</clipPath>
+</svg>
+      <div id="Section5-card-item2"><img src="images/winch5.jpg" width="960" height="960" alt="" title=""></div>
+      <div id="Section5-card-item3">ونش انقاذ اكتوبر</div>
    </div>
 </div>
 </div>
@@ -397,80 +367,26 @@ $(document).ready(function()
 <path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
 </clipPath>
 </svg>
-      <div id="Section11-card-item2"><img src="images/project-1.jpg" width="550" height="450" alt="" title=""></div>
+      <div id="Section11-card-item2"><img src="images/winch3.jpg" width="960" height="960" alt="" title=""></div>
       <div id="Section11-card-item3">ونش انقاذ اكتوبر</div>
    </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid9">
-<div id="LayoutGrid9">
-<div class="row">
-<div class="col-1">
-<div class="col-1-padding">
-<div id="wb_Section12" class="card">
-   <div id="Section12-card-body">
-      <div id="Section12-card-item0"><div id="Section12-card-item0-shape"></div></div>
+<div id="wb_Section7" class="card">
+   <div id="Section7-card-body">
+      <div id="Section7-card-item0"><div id="Section7-card-item0-shape"></div></div>
 <svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
-<clipPath id="Section12-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<clipPath id="Section7-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
 <path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
 </clipPath>
 </svg>
-      <div id="Section12-card-item1"><div id="Section12-card-item1-shape"></div></div>
+      <div id="Section7-card-item1"><div id="Section7-card-item1-shape"></div></div>
 <svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
-<clipPath id="Section12-card-item1-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<clipPath id="Section7-card-item1-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
 <path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
 </clipPath>
 </svg>
-      <div id="Section12-card-item2"><img src="images/project-1.jpg" width="550" height="450" alt="" title=""></div>
-      <div id="Section12-card-item3">ونش انقاذ اكتوبر</div>
-   </div>
-</div>
-</div>
-</div>
-<div class="col-2">
-<div class="col-2-padding">
-<div id="wb_Section13" class="card">
-   <div id="Section13-card-body">
-      <div id="Section13-card-item0"><div id="Section13-card-item0-shape"></div></div>
-<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
-<clipPath id="Section13-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
-<path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
-</clipPath>
-</svg>
-      <div id="Section13-card-item1"><div id="Section13-card-item1-shape"></div></div>
-<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
-<clipPath id="Section13-card-item1-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
-<path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
-</clipPath>
-</svg>
-      <div id="Section13-card-item2"><img src="images/project-1.jpg" width="550" height="450" alt="" title=""></div>
-      <div id="Section13-card-item3">ونش انقاذ اكتوبر</div>
-   </div>
-</div>
-</div>
-</div>
-<div class="col-3">
-<div class="col-3-padding">
-<div id="wb_Section14" class="card">
-   <div id="Section14-card-body">
-      <div id="Section14-card-item0"><div id="Section14-card-item0-shape"></div></div>
-<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
-<clipPath id="Section14-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
-<path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
-</clipPath>
-</svg>
-      <div id="Section14-card-item1"><div id="Section14-card-item1-shape"></div></div>
-<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
-<clipPath id="Section14-card-item1-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
-<path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
-</clipPath>
-</svg>
-      <div id="Section14-card-item2"><img src="images/project-1.jpg" width="550" height="450" alt="" title=""></div>
-      <div id="Section14-card-item3">ونش انقاذ اكتوبر</div>
+      <div id="Section7-card-item2"><img src="images/Car-Towing-Service.jpg" width="1024" height="768" alt="" title=""></div>
+      <div id="Section7-card-item3">ونش انقاذ اكتوبر</div>
    </div>
 </div>
 </div>
@@ -483,10 +399,10 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Text10">
-<span id="wb_uid8"><strong>مشروعنا</strong></span>
+<span id="wb_uid8"><strong>مقالاتنا الحديثة</strong></span>
 </div>
 <div id="wb_Text11">
-<span id="wb_uid9"><strong>مشاريعنا المكتملة مؤخرا </strong></span>
+<span id="wb_uid9"><strong>اخر مقالاتنا</strong></span>
 </div>
 </div>
 </div>
@@ -497,7 +413,7 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Section15" class="card">
+<div id="wb_Section15" class="card" onclick="window.location.href='./article.html';return false;">
    <div id="Section15-card-body">
       <div id="Section15-card-item0"><div id="Section15-card-item0-shape"></div></div>
 <svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
@@ -505,55 +421,52 @@ $(document).ready(function()
 <path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
 </clipPath>
 </svg>
-      <div id="Section15-card-item1"><img src="images/blog-1.jpg" width="600" height="450" alt="" title=""></div>
-      <div id="Section15-card-item2"><img src="images/admin.jpg" width="100" height="100" alt="" title=""></div>
-      <div id="Section15-card-item3"><a href="google.com.eg">ونش انقاذ اكتوبر</a></div>
-      <div id="Section15-card-item4">بقلم دانيال مارتن<br></div>
-      <div id="Section15-card-item5">24 March 2023<br><br></div>
-      <div id="Section15-card-item6">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطب أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصو.<br><br><br></div>
-      <div id="Section15-card-item7"><a href="google.com.eg">ونش انقاذ اكتوبر</a></div>
+      <div id="Section15-card-item1"><img src="images/Car-Towing-Service.jpg" width="1024" height="768" alt="" title=""></div>
+      <div id="Section15-card-item2"><img src="images/images (2).jpg" width="225" height="225" alt="" title=""></div>
+      <div id="Section15-card-item3"><a href="./article.html">ونش انقاذ القاهرة</a></div>
+      <div id="Section15-card-item4">سرعة وفعالية في خدمات ونش الإنقاذ لشركة الواحة للإنقاذ السريع<br></div>
+      <div id="Section15-card-item5">تتجاوز شركة الواحة للإنقاذ السريع التوقعات بفضل خدمات ونش الإنقاذ السيارات عالية الجودة والتي تتميز بالسرعة والفعالية. إنها الخيار الأمثل عندما يتعلق الأمر بمساعدة السائقين المحتجزين أو المواجهين لمشاكل على الطريق.<br><br></div>
+      <div id="Section15-card-item6"><a href="google.com.eg">ونش انقاذ القاهرة</a></div>
    </div>
 </div>
 </div>
 </div>
 <div class="col-2">
 <div class="col-2-padding">
-<div id="wb_Section16" class="card">
-   <div id="Section16-card-body">
-      <div id="Section16-card-item0"><div id="Section16-card-item0-shape"></div></div>
+<div id="wb_Section8" class="card" onclick="window.location.href='./article.html';return false;">
+   <div id="Section8-card-body">
+      <div id="Section8-card-item0"><div id="Section8-card-item0-shape"></div></div>
 <svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
-<clipPath id="Section16-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<clipPath id="Section8-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
 <path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
 </clipPath>
 </svg>
-      <div id="Section16-card-item1"><img src="images/blog-1.jpg" width="600" height="450" alt="" title=""></div>
-      <div id="Section16-card-item2"><img src="images/admin.jpg" width="100" height="100" alt="" title=""></div>
-      <div id="Section16-card-item3"><a href="google.com.eg">ونش انقاذ اكتوبر</a></div>
-      <div id="Section16-card-item4">بقلم دانيال مارتن<br></div>
-      <div id="Section16-card-item5">24 March 2023<br><br></div>
-      <div id="Section16-card-item6">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطب أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصو.<br><br><br></div>
-      <div id="Section16-card-item7"><a href="google.com.eg">ونش انقاذ اكتوبر</a></div>
+      <div id="Section8-card-item1"><img src="images/Car-Towing-Service.jpg" width="1024" height="768" alt="" title=""></div>
+      <div id="Section8-card-item2"><img src="images/images (2).jpg" width="225" height="225" alt="" title=""></div>
+      <div id="Section8-card-item3"><a href="./article.html">ونش انقاذ مصر الجديدة</a></div>
+      <div id="Section8-card-item4">سرعة وفعالية في خدمات ونش الإنقاذ لشركة الواحة للإنقاذ السريع<br></div>
+      <div id="Section8-card-item5">تتجاوز شركة الواحة للإنقاذ السريع التوقعات بفضل خدمات ونش الإنقاذ السيارات عالية الجودة والتي تتميز بالسرعة والفعالية. إنها الخيار الأمثل عندما يتعلق الأمر بمساعدة السائقين المحتجزين أو المواجهين لمشاكل على الطريق.<br><br></div>
+      <div id="Section8-card-item6"><a href="google.com.eg">ونش انقاذ مصر الجديدة</a></div>
    </div>
 </div>
 </div>
 </div>
 <div class="col-3">
 <div class="col-3-padding">
-<div id="wb_Section17" class="card">
-   <div id="Section17-card-body">
-      <div id="Section17-card-item0"><div id="Section17-card-item0-shape"></div></div>
+<div id="wb_Section12" class="card" onclick="window.location.href='./article.html';return false;">
+   <div id="Section12-card-body">
+      <div id="Section12-card-item0"><div id="Section12-card-item0-shape"></div></div>
 <svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
-<clipPath id="Section17-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<clipPath id="Section12-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
 <path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
 </clipPath>
 </svg>
-      <div id="Section17-card-item1"><img src="images/blog-1.jpg" width="600" height="450" alt="" title=""></div>
-      <div id="Section17-card-item2"><img src="images/admin.jpg" width="100" height="100" alt="" title=""></div>
-      <div id="Section17-card-item3"><a href="google.com.eg">ونش انقاذ اكتوبر</a></div>
-      <div id="Section17-card-item4">بقلم دانيال مارتن<br></div>
-      <div id="Section17-card-item5">24 March 2023<br><br></div>
-      <div id="Section17-card-item6">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطب أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصو.<br><br><br></div>
-      <div id="Section17-card-item7"><a href="google.com.eg">ونش انقاذ اكتوبر</a></div>
+      <div id="Section12-card-item1"><img src="images/Car-Towing-Service.jpg" width="1024" height="768" alt="" title=""></div>
+      <div id="Section12-card-item2"><img src="images/images (2).jpg" width="225" height="225" alt="" title=""></div>
+      <div id="Section12-card-item3"><a href="./article.html">ونش انقاذ مدينة نصر</a></div>
+      <div id="Section12-card-item4">سرعة وفعالية في خدمات ونش الإنقاذ لشركة الواحة للإنقاذ السريع<br></div>
+      <div id="Section12-card-item5">تتجاوز شركة الواحة للإنقاذ السريع التوقعات بفضل خدمات ونش الإنقاذ السيارات عالية الجودة والتي تتميز بالسرعة والفعالية. إنها الخيار الأمثل عندما يتعلق الأمر بمساعدة السائقين المحتجزين أو المواجهين لمشاكل على الطريق.<br><br></div>
+      <div id="Section12-card-item6"><a href="google.com.eg">ونش انقاذ مدينة نصر</a></div>
    </div>
 </div>
 </div>
@@ -582,8 +495,8 @@ $(document).ready(function()
    <div id="Section19-card-body">
       <div id="Section19-card-item0">حسن مكاوى</div>
       <div id="Section19-card-item1"><a href="https://www.wysiwygwebbuilder.com"><i class="fa fa-star"></i></a></div>
-      <div id="Section19-card-item2"><img src="images/testimonial-4.jpg" width="100" height="100" alt="" title=""></div>
-      <div id="Section19-card-item3">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.<br><br></div>
+      <div id="Section19-card-item2"><img src="images/download (2).png" width="225" height="225" alt="" title=""></div>
+      <div id="Section19-card-item3">أنا بجد عايز أشكر شركة الواحة للإنقاذ السريع على الخدمة الزينة إللي قدموها. الصراحة الخدمة كانت فوق التوقعات بكتير، يعني كان في ونش جاهز قدام عنواني بسرعة واتفاجأت إنهم جهزوا حتى معدات متطورة وفريق محترف جداً. الشباب بيعملوا شغلهم بأمانة وفعلاً ساعدوني في وقت ضروري. الأحلى من كده كانت الأسعار اللي مقبولة جداً ومش مبالغ فيها. عايزين توصلوا بأمان وتحس إنك مع ناس فاهمة شغلها؟ متترددش تتصل بشركة الواحة، هتشكر نفسك!<br><br></div>
       <hr id="Section19-card-item4">
       <div id="Section19-card-item5">مدرس</div>
       <div id="Section19-card-item6"><a href="https://www.wysiwygwebbuilder.com"><i class="fa fa-star"></i></a></div>
@@ -594,12 +507,12 @@ $(document).ready(function()
 </div>
 <div id="wb_Section18" class="card">
    <div id="Section18-card-body">
-      <div id="Section18-card-item0">حسن مكاوى</div>
+      <div id="Section18-card-item0">حسين رشدان</div>
       <div id="Section18-card-item1"><a href="https://www.wysiwygwebbuilder.com"><i class="fa fa-star"></i></a></div>
-      <div id="Section18-card-item2"><img src="images/testimonial-4.jpg" width="100" height="100" alt="" title=""></div>
-      <div id="Section18-card-item3">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.<br><br></div>
+      <div id="Section18-card-item2"><img src="images/download (2).png" width="225" height="225" alt="" title=""></div>
+      <div id="Section18-card-item3">أنا بجد عايز أشكر شركة الواحة للإنقاذ السريع على الخدمة الزينة إللي قدموها. الصراحة الخدمة كانت فوق التوقعات بكتير، يعني كان في ونش جاهز قدام عنواني بسرعة واتفاجأت إنهم جهزوا حتى معدات متطورة وفريق محترف جداً. الشباب بيعملوا شغلهم بأمانة وفعلاً ساعدوني في وقت ضروري. الأحلى من كده كانت الأسعار اللي مقبولة جداً ومش مبالغ فيها. عايزين توصلوا بأمان وتحس إنك مع ناس فاهمة شغلها؟ متترددش تتصل بشركة الواحة، هتشكر نفسك!<br><br></div>
       <hr id="Section18-card-item4">
-      <div id="Section18-card-item5">مدرس</div>
+      <div id="Section18-card-item5">محاسب</div>
       <div id="Section18-card-item6"><a href="https://www.wysiwygwebbuilder.com"><i class="fa fa-star"></i></a></div>
       <div id="Section18-card-item7"><a href="https://www.wysiwygwebbuilder.com"><i class="fa fa-star"></i></a></div>
       <div id="Section18-card-item8"><a href="https://www.wysiwygwebbuilder.com"><i class="fa fa-star"></i></a></div>
@@ -608,12 +521,12 @@ $(document).ready(function()
 </div>
 <div id="wb_Section21" class="card">
    <div id="Section21-card-body">
-      <div id="Section21-card-item0">حسن مكاوى</div>
+      <div id="Section21-card-item0">فاروق عتمان</div>
       <div id="Section21-card-item1"><a href="https://www.wysiwygwebbuilder.com"><i class="fa fa-star"></i></a></div>
-      <div id="Section21-card-item2"><img src="images/testimonial-4.jpg" width="100" height="100" alt="" title=""></div>
-      <div id="Section21-card-item3">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.<br><br></div>
+      <div id="Section21-card-item2"><img src="images/download (2).png" width="225" height="225" alt="" title=""></div>
+      <div id="Section21-card-item3">أنا بجد عايز أشكر شركة الواحة للإنقاذ السريع على الخدمة الزينة إللي قدموها. الصراحة الخدمة كانت فوق التوقعات بكتير، يعني كان في ونش جاهز قدام عنواني بسرعة واتفاجأت إنهم جهزوا حتى معدات متطورة وفريق محترف جداً. الشباب بيعملوا شغلهم بأمانة وفعلاً ساعدوني في وقت ضروري. الأحلى من كده كانت الأسعار اللي مقبولة جداً ومش مبالغ فيها. عايزين توصلوا بأمان وتحس إنك مع ناس فاهمة شغلها؟ متترددش تتصل بشركة الواحة، هتشكر نفسك!<br><br></div>
       <hr id="Section21-card-item4">
-      <div id="Section21-card-item5">مدرس</div>
+      <div id="Section21-card-item5">مهندس </div>
       <div id="Section21-card-item6"><a href="https://www.wysiwygwebbuilder.com"><i class="fa fa-star"></i></a></div>
       <div id="Section21-card-item7"><a href="https://www.wysiwygwebbuilder.com"><i class="fa fa-star"></i></a></div>
       <div id="Section21-card-item8"><a href="https://www.wysiwygwebbuilder.com"><i class="fa fa-star"></i></a></div>
@@ -630,101 +543,44 @@ $(document).ready(function()
 <div id="footer_top">
 <div class="row">
 <div class="col-1">
-<div id="wb_Text14">
-<span id="wb_uid12"><strong>Info</strong></span>
-</div>
-<nav id="wb_indexCssMenu3">
-<ul id="indexCssMenu3" role="menubar" class="nav">
-<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Litora&nbsp;Torquent</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Conubia&nbsp;Nostra</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Keptos&nbsp;Himenaeos</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Curabitur&nbsp;Sodales</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Ligula&nbsp;In&nbsp;Libero</a>
-</li>
-</ul>
-
-</nav>
-</div>
-<div class="col-2">
-<div id="wb_Text16">
-<span id="wb_uid13"><strong>Useful Links</strong></span>
-</div>
-<div id="wb_Text15">
-<span id="wb_uid14"><strong>Connect Us</strong></span>
-</div>
-<nav id="wb_indexCssMenu1">
-<ul id="indexCssMenu1" role="menubar" class="nav">
-<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Lorem&nbsp;Ipsum</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Dolor&nbsp;Sit&nbsp;Amet</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Consectetur&nbsp;Adipiscing&nbsp;Elit</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Integer&nbsp;Nec&nbsp;Odio</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Praesent&nbsp;Libero</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Sed&nbsp;Cursus</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Ante&nbsp;Dapibus&nbsp;Diam</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Nulla&nbsp;Quis&nbsp;Sem</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Nibh&nbsp;Elementum&nbsp;Imperdiet</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Duis&nbsp;Sagittis&nbsp;Ipsum</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Praesent&nbsp;Mauris</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Fusce&nbsp;Nec&nbsp;Tellus</a>
-</li>
-</ul>
-
-</nav>
-</div>
-<div class="col-3">
-<div id="wb_FontAwesomeIcon1">
-<a href="./index.html"><div id="FontAwesomeIcon1"><i class="fa fa-facebook"></i></div></a>
-</div>
-<div id="wb_FontAwesomeIcon2">
-<a href="./index.html"><div id="FontAwesomeIcon2"><i class="fa fa-twitter"></i></div></a>
-</div>
-<div id="wb_FontAwesomeIcon3">
-<a href="./index.html"><div id="FontAwesomeIcon3"><i class="fa fa-pinterest"></i></div></a>
-</div>
-<div id="wb_FontAwesomeIcon5">
-<a href="./index.html"><div id="FontAwesomeIcon5"><i class="fa fa-youtube"></i></div></a>
-</div>
-<div id="wb_indexText1">
-<span id="wb_uid15"><strong>More Stuff</strong></span>
-</div>
-<nav id="wb_indexCssMenu2">
-<ul id="indexCssMenu2" role="menubar" class="nav">
-<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Augue&nbsp;semper&nbsp;porta</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Mauris&nbsp;Massa</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Vestibulum&nbsp;Lacinia</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Arcu&nbsp;Eget&nbsp;Nulla</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Class&nbsp;Aptent</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Aaciti&nbsp;Sociosqu</a>
-</li>
-</ul>
-
-</nav>
-<div id="wb_Text17">
-<span id="wb_uid16"><strong>Copyright © Footer 2018. All right reserved. </strong></span>
+<a id="Button4" href="./index.html">ونش انقاذ الشرقية</a>
+<a id="Button1" href="./index.html">ونش انقاذ القليوبية</a>
+<a id="Button2" href="./index.html">ونش انقاذ الإسكندرية</a>
+<a id="Button3" href="./index.html">ونش انقاذ الجيزة</a>
+<a id="Button5" href="./index.html">ونش إنقاذ اكتوبر</a>
+<a id="Button6" href="./index.html">ونش انقاذ مدينة نصر</a>
+<a id="Button7" href="./index.html">ونش سحب سيارات المعادي</a>
+<a id="Button8" href="./index.html">ونش سحب سيارات الهرم</a>
+<a id="Button9" href="./index.html">ونش انقاذ مصر الجديدة</a>
 </div>
 </div>
 </div>
 </div>
+<div id="wb_LayoutGrid13">
+<div id="LayoutGrid13">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image7">
+<img src="images/winch1.png" id="Image7" alt="" width="41" height="31">
+</div>
+<div id="wb_Text1">
+<span id="wb_uid12">جميع الحقوق محفوظة لشركتنا<br></span><span id="wb_uid13"><strong> </strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer1">
+<div id="wb_Lottie1">
+<a href="tel:01024888950"><lottie-player id="Lottie1" autoplay loop speed="1" mode="normal" src="https://lottie.host/ac621f2c-53cc-4eaf-9c90-63de759b541a/bRSC9Bkfhr.json"></lottie-player></a></div>
+<div id="wb_Text14" dir="rtl">
+<span id="wb_uid14">إتصل الأن</span></div>
+</div>
+<div id="Layer2">
+<div id="wb_Lottie2">
+<a href="https://api.whatsapp.com/send/?phone=201024888950&text&app_absent=0"><lottie-player id="Lottie2" autoplay loop speed="1" mode="normal" src="https://lottie.host/82159601-fc35-4611-a0a1-adfcccc27568/MbV4pH1Gnu.json"></lottie-player></a></div>
+<div id="wb_Text15" dir="rtl">
+<span id="wb_uid15">إرسل لنا موقعك الان</span></div>
 </div>
 </body>
 </html>
